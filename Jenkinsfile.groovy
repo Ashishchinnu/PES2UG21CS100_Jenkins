@@ -24,6 +24,8 @@ pipeline {
             steps {
                 script {
                     // Perform deployment tasks, if any
+                    sh 'mvn deploy'
+                    echo 'Deployment Successful'
                 }
             }
         }
